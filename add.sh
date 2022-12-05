@@ -1,3 +1,3 @@
 #!/bin/bash
-sum=0
+sum=`expr $sum + 1`
 

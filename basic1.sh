@@ -1,2 +1,2 @@
 #!/bin/bash
-var=1
+sum=`expr $sum + 1`
