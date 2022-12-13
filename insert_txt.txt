@@ -1,0 +1,14 @@
+inserting text in nth line
+
+
+
+Process two more lines, then add the "finish":
+
+sed -e 'n; n; a finish'
+Or, with GNU sed, you can use an address that means "start on line 3, repeat every 3rd line":
+
+sed -e '3~3 a finish'
+
+Using awk it is pretty simple:
+
+awk '1; NR%3 == 0 { print "finish" }' file
