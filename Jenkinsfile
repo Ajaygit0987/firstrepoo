@@ -55,7 +55,7 @@ pipeline {
         
         always 
         {
-            sh 'echo "Run Always"'
+            sh 'echo "Run Alwayss"'
         }
         
         aborted 
