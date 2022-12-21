@@ -1,0 +1,12 @@
+#!/bin/bash
+for i in $*
+do
+process=`ps -ef | grep httpd | grep -v grep`
+if [[ -z "$process" ]]
+       then
+echo "not running"
+else
+echo " running"
+fi
+done
+      
