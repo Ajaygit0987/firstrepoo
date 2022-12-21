@@ -45,6 +45,7 @@ pipeline {
         success
         {
             sh 'echo "build sucess"'
+            echo "abc"
         }
         
         failure
